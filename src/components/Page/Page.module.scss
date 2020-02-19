@@ -22,6 +22,21 @@
     @include margin(0, 0, 1);
   }
 
+  & input,
+  textarea {
+    border: none;
+    background: rgb(247, 247, 247);
+    border-bottom: 1px solid rgb(117, 117, 117);
+    padding: 1rem;
+    width: 100%;
+  }
+
+  & button {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 1rem 2rem;
+    font-size: 0.8rem;
+  }
 }
 
 @include breakpoint-sm {
@@ -31,9 +46,7 @@
     &__inner {
       padding: 30px 20px;
     }
-
   }
-
 }
 
 @include breakpoint-md {
@@ -43,7 +56,5 @@
     &__inner {
       padding: 40px 35px;
     }
-
   }
-
 }
