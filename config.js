@@ -1,18 +1,18 @@
-'use strict';
+'use strict'
 
 module.exports = {
   url: 'https://lumen.netlify.com',
   pathPrefix: '/',
-  title: 'Blog by John Doe',
-  subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
-  copyright: '© All rights reserved.',
+  title: 'ホシキブログ',
+  subtitle: 'アメリカ現地企業で働くwebエンジニアの生活',
+  copyright: "© 2020 All rights reserved by Hosh'ki Tsunoda.",
   disqusShortname: '',
   postsPerPage: 4,
   googleAnalyticsId: 'UA-73379983-2',
   useKatex: false,
   menu: [
     {
-      label: 'Articles',
+      label: 'Blog',
       path: '/'
     },
     {
@@ -25,25 +25,26 @@ module.exports = {
     }
   ],
   author: {
-    name: 'John Doe',
-    photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    name: 'ツノダホシキ',
+    photo: '/avatar_circle.jpg',
+    bio:
+      '南カリフォルニアのアドテク系企業で働くFront End Developer。在米16年。高校卒業後でアメリカ留学→現地オンライン楽器店に6年勤務→同僚3人と独立するも4年ちょいで譲渡→2017年にブートキャンプを経てエンジニアに転身プログラミングや英語、日常の思いや国際結婚について書いていきます！',
     contacts: {
-      email: '',
-      facebook: '#',
-      telegram: '#',
-      twitter: '#',
-      github: '#',
+      email: 'hoshkitsunoda@gmail.com',
+      facebook: '',
+      telegram: '7143693982',
+      twitter: 'hoshkitsunoda',
+      github: 'hoshikitsunoda',
       rss: '',
       vkontakte: '',
-      linkedin: '#',
-      instagram: '#',
+      linkedin: 'hoshki-tsunoda',
+      instagram: 'hoshki_znoda',
       line: '',
       gitlab: '',
       weibo: '',
       codepen: '',
       youtube: '',
-      soundcloud: '',
+      soundcloud: ''
     }
   }
-};
+}

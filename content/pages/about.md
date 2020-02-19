@@ -1,13 +1,9 @@
 ---
-title: "About me"
-template: "page"
-socialImage: "/media/image-2.jpg"
+title: 'About me'
+template: 'page'
+socialImage: '/media/image-2.jpg'
 ---
 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+在米１６年目の現地アドテク企業で働く Front End Developer。高卒で留学後、オンラインの楽器屋を友人と運営したり、音楽とアートをしたりしながらギリギリ生きていける生活をキープ。2017 年に楽器屋を譲渡することになり、その時に一念発起して programming を志す。コーディングブートキャンプを経て 2018 年 3 月に無事エンジニアとして最初の仕事をゲット。その後はスタートアップを 3 件回って現在はフルリモートのアドテク系企業で働いています。
 
-![Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.](/media/image-2.jpg)
-
-*Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.*
-
-Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
+このブログでは主にプログラミングやアメリカのエンジニア事情、スタートアップ事情等を書いていこうと思います。他にも何かあればコンタクトフォームもしくはメールください！
