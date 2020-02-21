@@ -1,9 +1,9 @@
 'use strict'
 
 module.exports = {
-  url: 'https://lumen.netlify.com',
+  url: 'https://hoshki.dev/',
   pathPrefix: '/',
-  title: 'ホシキブログ',
+  title: 'hoshki.dev',
   subtitle: 'アメリカ現地企業で働くwebエンジニアの生活',
   copyright: "© 2020 All rights reserved by Hosh'ki Tsunoda.",
   disqusShortname: '',
