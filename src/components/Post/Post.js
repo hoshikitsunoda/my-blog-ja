@@ -31,9 +31,14 @@ const Post = ({ post, site }: Props) => {
       <div className={styles['post__content']}>
         <Content body={html} title={title} />
       </div>
-      <ShareButtons tags={array} url={site.domain + slug} twitterHandle={site.twitterHandle} title={title} />
 
       <div className={styles['post__footer']}>
+        <h3>シェアお願いします！</h3>
+        <ShareButtons 
+          tags={array} 
+          url={site.domain + slug} 
+          twitterHandle={site.twitterHandle} 
+          title={title} />
         <Meta date={date} />
         {tags && tagSlugs && <Tags tags={tags} tagSlugs={tagSlugs} />}
         <Author />
