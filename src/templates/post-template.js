@@ -20,7 +20,7 @@ const PostTemplate = ({ data }: Props) => {
 
   return (
     <Layout title={`${postTitle} - ${siteTitle}`} description={metaDescription} socialImage={socialImage} >
-      <Post post={data.markdownRemark} />
+      <Post post={data.markdownRemark} site={data.site.siteMetadata} />
     </Layout>
   );
 };
@@ -40,6 +40,12 @@ export const query = graphql`
         tags
         title
         socialImage
+      }
+    }
+    site {
+      siteMetadata {
+        domain: url
+        twitterHandle: twitterHandle
       }
     }
   }
