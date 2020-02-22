@@ -6,6 +6,7 @@ import Comments from './Comments';
 import Content from './Content';
 import Meta from './Meta';
 import Tags from './Tags';
+import ShareButtons from './ShareButtons'
 import styles from './Post.module.scss';
 import type { Node } from '../../types';
 
@@ -13,10 +14,15 @@ type Props = {
   post: Node
 };
 
-const Post = ({ post }: Props) => {
+const Post = ({ post, site }: Props) => {
   const { html } = post;
   const { tagSlugs, slug } = post.fields;
   const { tags, title, date } = post.frontmatter;
+  let array = []
+  tagSlugs.forEach(item => {
+    array.push(item.substring(5, item.length - 1))
+  })
+  console.log(slug)
 
   return (
     <div className={styles['post']}>
@@ -25,6 +31,7 @@ const Post = ({ post }: Props) => {
       <div className={styles['post__content']}>
         <Content body={html} title={title} />
       </div>
+      <ShareButtons tags={array} url={site.domain + slug} twitterHandle={site.twitterHandle} title={title} />
 
       <div className={styles['post__footer']}>
         <Meta date={date} />
