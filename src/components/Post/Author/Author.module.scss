@@ -10,6 +10,8 @@
   @include margin-bottom(2);
 
   &__bio {
+    padding: 1rem 2rem;
+    background-color: #f7f7f7;
     &-twitter {
       display: block;
       text-decoration: underline;

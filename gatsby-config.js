@@ -12,7 +12,8 @@ module.exports = {
     copyright: siteConfig.copyright,
     disqusShortname: siteConfig.disqusShortname,
     menu: siteConfig.menu,
-    author: siteConfig.author
+    author: siteConfig.author,
+    twitterHandle: 'hoshkitsunoda'
   },
   plugins: [
     {
@@ -189,7 +190,7 @@ module.exports = {
         background_color: '#FFF',
         theme_color: '#F7A046',
         display: 'standalone',
-        icon: 'static/logo-EigoJS.png'
+        icon: 'static/icon-256x256.png'
       }
     },
     'gatsby-plugin-offline',

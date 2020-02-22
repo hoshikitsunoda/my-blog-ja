@@ -1,0 +1,11 @@
+@import '../../../assets/scss/variables';
+@import '../../../assets/scss/mixins';
+
+.social {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+	&__button {
+		margin: 0.5rem 0.25rem;
+	}
+}
