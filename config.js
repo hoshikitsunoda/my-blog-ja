@@ -1,7 +1,7 @@
 'use strict'
 
 module.exports = {
-  url: 'https://hoshki.dev/',
+  url: 'https://hoshki.dev',
   pathPrefix: '/',
   title: 'hoshki.dev',
   subtitle: 'アメリカ現地企業で働くwebエンジニアの生活',
