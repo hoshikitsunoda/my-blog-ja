@@ -1,0 +1,10 @@
+@import '../../../assets/scss/variables';
+@import '../../../assets/scss/mixins';
+
+.darkmodeWrapper {
+  .darkmodeSwitch {
+    position: fixed !important;
+    right: 20px;
+    top: 10px;
+  }
+}
