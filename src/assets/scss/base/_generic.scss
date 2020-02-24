@@ -16,6 +16,63 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #fff;
+  transition: all 300ms;
+
+  &.dark-mode {
+    background-color: #140e1b;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    time {
+      color: #f7f7f7 !important;
+    }
+
+    h1 > a,
+    h2 > a,
+    h2 > a:hover,
+    li > a,
+    .Post-module--post__home-button--16Kl0 {
+      color: #f7f7f7;
+    }
+
+    .Post-module--post__home-button--16Kl0:hover {
+      color: #5d93ff;
+    }
+
+    .Author-module--author__bio--1Rnp- {
+      color: #fae3e7;
+      background-color: #3e3d3d;
+    }
+
+    .Author-module--author__subtitle--cAaEB {
+      color: #888888 !important;
+    }
+
+    .Content-module--content__body--2TrQ- {
+      a {
+        color: #5d93ff;
+      }
+    }
+
+    .Sidebar-module--sidebar__inner--Jdc5s:after {
+      background: linear-gradient(
+        to bottom,
+        #888888 0%,
+        #888888 48%,
+        #140e1b 100%
+      );
+    }
+
+    .Page-module--page--2nMky button {
+      color: #f7f7f7;
+    }
+  }
 }
 
 h1,
@@ -39,35 +96,35 @@ h2 {
   font-size: $typographic-base-font-size * 1.6875;
   @include line-height(1.5);
   @include margin-top(2);
-  @include margin-bottom(.5);
+  @include margin-bottom(0.5);
 }
 
 h3 {
   font-size: $typographic-base-font-size * 1.375;
   @include line-height(1);
   @include margin-top(2);
-  @include margin-bottom(.5);
+  @include margin-bottom(0.5);
 }
 
 h4 {
   font-size: $typographic-base-font-size * 1.2;
   @include line-height(1);
   @include margin-top(1.5);
-  @include margin-bottom(.5);
+  @include margin-bottom(0.5);
 }
 
 h5 {
   font-size: $typographic-base-font-size;
   @include line-height(1);
   @include margin-top(2.5);
-  @include margin-bottom(.5);
+  @include margin-bottom(0.5);
 }
 
 h6 {
   font-size: $typographic-base-font-size;
   @include line-height(1);
   @include margin-top(2.5);
-  @include margin-bottom(.5);
+  @include margin-bottom(0.5);
 }
 
 img {
@@ -87,7 +144,15 @@ hr {
   margin-right: auto;
   margin-left: auto;
   background-size: 100% 26px;
-  background-image: linear-gradient(to bottom, transparent 1px, transparent 11px, $color-base 11px, $color-base 15px, transparent 15px, transparent 26px);
+  background-image: linear-gradient(
+    to bottom,
+    transparent 1px,
+    transparent 11px,
+    $color-base 11px,
+    $color-base 15px,
+    transparent 15px,
+    transparent 26px
+  );
   width: 100px;
 }
 
@@ -100,7 +165,6 @@ a {
   &:active {
     color: $typographic-link-s-font-color;
   }
-
 }
 
 b,
@@ -116,7 +180,6 @@ ul {
     padding: 0 5px;
     margin-bottom: 10px;
   }
-
 }
 
 p {
@@ -137,8 +200,8 @@ figure {
 }
 
 figcaption {
-  @include line-height(.75);
-  @include margin-top(.25);
+  @include line-height(0.75);
+  @include margin-top(0.25);
   color: $color-base;
   font-size: $typographic-small-font-size;
   font-style: italic;
@@ -165,5 +228,4 @@ figcaption {
   .float-left {
     float: left;
   }
-
 }
