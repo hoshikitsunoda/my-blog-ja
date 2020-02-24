@@ -20,7 +20,7 @@ body {
   transition: all 300ms;
 
   &.dark-mode {
-    background-color: #342b2b;
+    background-color: #140e1b;
 
     h1,
     h2,
@@ -41,8 +41,13 @@ body {
       color: #f7f7f7;
     }
 
+    .Post-module--post__home-button--16Kl0:hover {
+      color: #5d93ff;
+    }
+
     .Author-module--author__bio--1Rnp- {
-      color: #272122;
+      color: #fae3e7;
+      background-color: #3e3d3d;
     }
 
     .Author-module--author__subtitle--cAaEB {
@@ -53,6 +58,19 @@ body {
       a {
         color: #5d93ff;
       }
+    }
+
+    .Sidebar-module--sidebar__inner--Jdc5s:after {
+      background: linear-gradient(
+        to bottom,
+        #888888 0%,
+        #888888 48%,
+        #140e1b 100%
+      );
+    }
+
+    .Page-module--page--2nMky button {
+      color: #f7f7f7;
     }
   }
 }
