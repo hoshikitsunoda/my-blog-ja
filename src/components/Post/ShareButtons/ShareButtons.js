@@ -13,13 +13,12 @@ import {
 } from 'react-share'
 import styles from './ShareButtons.module.scss'
 
+const fillColor = 'rgba(0, 0, 0, 0)'
+
 export const ShareButtons = ({ twitterHandle, url, title, tags }) => (
   <div className={styles['social']}>
     <FacebookShareButton url={url} className={styles['social__button']}>
-      <FacebookIcon
-        bgStyle={{ fill: 'rgba(0, 0, 0, 0)' }}
-        iconFillColor={'#3b5998'}
-      />
+      <FacebookIcon bgStyle={{ fill: fillColor }} iconFillColor={'#3b5998'} />
     </FacebookShareButton>
 
     <TwitterShareButton
@@ -29,17 +28,11 @@ export const ShareButtons = ({ twitterHandle, url, title, tags }) => (
       hashtags={tags}
       className={styles['social__button']}
     >
-      <TwitterIcon
-        bgStyle={{ fill: 'rgba(0, 0, 0, 0)' }}
-        iconFillColor={'#1da1f2'}
-      />
+      <TwitterIcon bgStyle={{ fill: fillColor }} iconFillColor={'#1da1f2'} />
     </TwitterShareButton>
 
     <LinkedinShareButton url={url} className={styles['social__button']}>
-      <LinkedinIcon
-        bgStyle={{ fill: 'rgba(0, 0, 0, 0)' }}
-        iconFillColor={'#0077b5'}
-      />
+      <LinkedinIcon bgStyle={{ fill: fillColor }} iconFillColor={'#0077b5'} />
     </LinkedinShareButton>
 
     <RedditShareButton
@@ -47,10 +40,7 @@ export const ShareButtons = ({ twitterHandle, url, title, tags }) => (
       title={title}
       className={styles['social__button']}
     >
-      <RedditIcon
-        bgStyle={{ fill: 'rgba(0, 0, 0, 0)' }}
-        iconFillColor={'#ff4500'}
-      />
+      <RedditIcon bgStyle={{ fill: fillColor }} iconFillColor={'#ff4500'} />
     </RedditShareButton>
 
     <WhatsappShareButton
@@ -58,10 +48,7 @@ export const ShareButtons = ({ twitterHandle, url, title, tags }) => (
       title={title}
       className={styles['social__button']}
     >
-      <WhatsappIcon
-        bgStyle={{ fill: 'rgba(0, 0, 0, 0)' }}
-        iconFillColor={'#128c7e'}
-      />
+      <WhatsappIcon bgStyle={{ fill: fillColor }} iconFillColor={'#128c7e'} />
     </WhatsappShareButton>
   </div>
 )
