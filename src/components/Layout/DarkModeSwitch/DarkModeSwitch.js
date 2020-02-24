@@ -15,6 +15,8 @@ const DarkModeSwitch = () => {
         checked={darkMode.value}
         onColor={'#888888'}
         offColor={'#140e1b'}
+        uncheckedIcon={false}
+        checkedIcon={false}
       />
     </div>
   )
